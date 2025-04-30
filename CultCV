@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title>CultCV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body class="font-sans">
+
+    <!-- Landing Page -->
+    <div id="home" class="min-h-screen bg-[#1e293b] text-white">
+      <div class="bg-white flex items-center justify-between px-8 py-4">
+        <div class="flex items-center space-x-2 text-gray-900 font-bold text-xl">
+          <i class="fas fa-file-alt"></i>
+          <span>CultCV</span>
+        </div>
+        <div class="space-x-6 text-gray-700 text-sm font-medium">
+          <a href="#" class="hover:text-black">Templates</a>
+          <a href="#" class="hover:text-black">Features</a>
+          <a href="#" class="hover:text-black">Pricing</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center px-10 md:px-32 pt-20">
+        <div class="max-w-lg">
+          <h1 class="text-5xl font-bold leading-tight mb-6">
+            Create a <br />
+            professional resume <br />
+            in minutes
+          </h1>
+          <p class="text-lg text-gray-300 mb-8">
+            Stand out from the crowd with a clean, minimalist <br />
+            resume that highlights your skills and experience.
+          </p>
+          <a href="#builder">
+            <button class="bg-white text-[#1e293b] font-semibold px-6 py-3 rounded-md shadow-md">
+              Build Your Resume
+            </button>
+          </a>
+        </div>
+        <div class="mt-12 md:mt-0">
+          <img
+            src="https://placehold.co/400x400?text=Resume+Illustration"
+            alt="Illustration of a resume document with lines representing text content"
+            class="rounded-md shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Builder Page -->
+    <div id="builder" class="min-h-screen bg-gray-100">
+      <div class="bg-white flex items-center justify-between px-8 py-4 shadow">
+        <div class="flex items-center space-x-2 text-gray-900 font-bold text-xl">
+          <i class="fas fa-file-alt"></i>
+          <span>CultCV</span>
+        </div>
+        <div class="space-x-4">
+          <button class="bg-[#1e293b] text-white px-4 py-2 rounded-md font-semibold">Save Resume</button>
+          <button class="bg-[#1e293b] text-white px-4 py-2 rounded-md font-semibold">Download PDF</button>
+        </div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-6 p-8">
+        <div class="w-full lg:w-1/2 space-y-6">
+          <!-- Personal Information -->
+          <div class="bg-white p-6 rounded-md shadow">
+            <h2 class="font-bold text-lg mb-4">Personal Information</h2>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium">Full Name</label>
+                <input class="w-full border rounded p-2" placeholder="John Doe" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Job Title</label>
+                <input class="w-full border rounded p-2" placeholder="Financial Analyst" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Email</label>
+                <input class="w-full border rounded p-2" placeholder="john@example.com" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Phone</label>
+                <input class="w-full border rounded p-2" placeholder="(123) 456-7890" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Location</label>
+                <input class="w-full border rounded p-2" placeholder="New York, NY" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium">LinkedIn</label>
+                <input class="w-full border rounded p-2" placeholder="linkedin.com/in/johndoe" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Summary -->
+          <div class="bg-white p-6 rounded-md shadow">
+            <h2 class="font-bold text-lg mb-4">Professional Summary</h2>
+            <textarea class="w-full border rounded p-2 h-32" placeholder="Write a concise summary of your skills and experience..."></textarea>
+          </div>
+        </div>
+
+        <!-- Resume Preview -->
+        <div class="w-full lg:w-1/2">
+          <div class="bg-white p-6 rounded-md shadow">
+            <h2 class="font-bold text-xl mb-6">Resume Preview</h2>
+            <div class="text-lg font-bold">JOHN DOE</div>
+            <div class="text-gray-700">Financial Analyst</div>
+            <div class="text-sm text-gray-600 mt-1">
+              john@example.com &nbsp; | &nbsp; (123) 456-7890 &nbsp; | &nbsp; New York, NY &nbsp; | &nbsp;
+              linkedin.com/in/johndoe
+            </div>
+
+            <div class="mt-6">
+              <h3 class="font-bold text-md border-b pb-1 mb-2">PROFESSIONAL SUMMARY</h3>
+              <p class="text-sm text-gray-700">
+                Dedicated financial analyst with 5+ years of experience in investment management and financial modeling.
+                Proficient in risk assessment, portfolio management, and financial analysis. Strong track record of
+                delivering data-driven insights that improve investment decisions.
+              </p>
+            </div>
+
+            <div class="mt-6">
+              <h3 class="font-bold text-md border-b pb-1 mb-2">WORK EXPERIENCE</h3>
+              <div class="font-bold text-sm text-gray-900">FINANCIAL ANALYST</div>
+              <div class="text-sm text-gray-600">INVESTMENT FIRM, INC. &nbsp;&nbsp;&nbsp;&nbsp; 01/2020 - Present</div>
+              <ul class="list-disc ml-5 mt-2 text-sm text-gray-700">
+                <li>Analyzed financial data and prepared quarterly reports for clients with portfolios exceeding $50M</li>
+                <li>Developed investment strategies that increased returns by 15% year-over-year</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
